@@ -1,0 +1,99 @@
+	<div id="content">
+		<div class="container">
+			<!-- Breadcrumbs line -->
+			<div class="crumbs">
+				<ul id="breadcrumbs" class="breadcrumb">
+					<li>
+						<i class="icon-home"></i>
+						<a href="?page=MainPage.HomePage">Dashboard</a>
+					</li>
+					<li class="current">
+						<a href="?page=<omdae:TLabel id='submoduleUrl' />" title="<omdae:TLabel id='submoduleName' />"> <omdae:TLabel id='submoduleName' /></a>
+					</li>
+				</ul>
+
+				<ul class="crumb-buttons">
+					<li><a data-toggle="modal" href="#myModal1" title=""><i class="icon-cog"></i><span>ตั้งค่า</span></a></li>
+				</ul>
+			</div>
+			<!-- /Breadcrumbs line -->
+
+			<omdae:ShowBlog>
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h3>
+						<span><omdae:TLabel id='submoduleDetail' /></span>
+					</div>
+
+					<!-- Page Stats -->
+
+					<!-- /Page Stats -->
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				
+					<div class="row">
+						<div class="col-md-12">
+							<div class="widget box">
+								<div class="widget-header">
+									<h4><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h4>
+
+									<!-- Toolbar -->
+									<div class="toolbar no-padding">
+										<div class="btn-group">
+											
+											<omdae:TButton id='bn' />
+											<omdae:TButton id='bndelgrid' />
+											<span class="btn btn-xs btn-info dropdown-toggle" data-toggle="dropdown">
+												รายงาน <i class="icon-angle-down"></i>
+											</span>
+											<ul class="dropdown-menu pull-right">
+												<li><a href="#"><i class="icon-file-alt"></i> Word</a></li>
+												<li><a href="#"><i class="icon-file-alt"></i> Excel</a></li>
+											</ul>
+											<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+										</div>
+									</div>
+									<!-- /Toolbar -->
+
+								</div>
+								<div class="widget-content">
+									
+										<omdae:TGridtable id='Grid1' />
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				
+				<!-- /Page Content -->
+			</div>
+			<!-- /.container -->
+
+				<!-- Modal dialog -->
+				<div class="modal fade" id="myModal1">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">ตั้งค่า <omdae:TLabel id='submoduleName' /> </h4>
+							</div>
+							<div class="modal-body">
+								ตั้งค่า
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+							</div>
+						</div><!-- /.modal-content -->
+					</div><!-- /.modal-dialog -->
+				</div><!-- /.modal -->
+
+			</omdae:ShowBlog>
+		</div>
+
+
+<omdae:TLabel id='alertmsg' />

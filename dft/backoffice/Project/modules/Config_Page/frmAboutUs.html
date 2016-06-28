@@ -1,0 +1,82 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข จัดการเกี่ยวกับเรา</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข จัดการเกี่ยวกับเรา</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข จัดการเกี่ยวกับเรา</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmAboutUs>
+									<omdae:THidden id='aboutusID' />
+									<omdae:THidden id='version' />
+									
+
+								
+
+
+
+									<div class="form-group">
+										<label class="control-label col-md-2">รายละเอียด Th: </label>
+										<div class="col-md-10">
+											<omdae:TSummereditor id='aboutusDetailTh' />
+										</div>
+									</div>
+
+
+								<div class="form-group">
+										<label class="control-label col-md-2">รายละเอียด En : </label>
+										<div class="col-md-10">
+											<omdae:TSummereditor id='aboutusDetailEn' />
+										</div>
+									</div>
+									
+
+									<div class="form-group">
+										<label class="control-label col-md-2">สถานะ : </label>
+										<div class="col-md-5">
+											<omdae:TListBox id='status' />
+										</div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmAboutUs>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+			</div>
+			<!-- /Page Content -->
+		</div>
+		<!-- /.container -->
+		<omdae:TLabel id='alertmsg' />

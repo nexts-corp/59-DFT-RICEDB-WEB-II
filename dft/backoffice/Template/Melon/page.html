@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Dft || System</title>
+
+	<!--=== CSS ===-->
+<!-- Bootstrap -->
+	<link href="./Template/Melon/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+	<!-- jQuery UI -->
+	<!--<link href="plugins/jquery-ui/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />-->
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="plugins/jquery-ui/jquery.ui.1.10.2.ie.css"/>
+	<![endif]-->
+
+	<!-- Theme -->
+	<link href="./Template/Melon/assets/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="./Template/Melon/assets/css/plugins.css" rel="stylesheet" type="text/css" />
+	<link href="./Template/Melon/assets/css/plugins/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+
+	<link href="./Template/Melon/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="./Template/Melon/assets/css/icons.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="./Template/Melon/assets/css/fontawesome/font-awesome.min.css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="./Template/Melon/assets/css/fontawesome/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<!--[if IE 8]>
+		<link href="./Template/Melon/assets/css/ie8.css" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+	<!--=== JavaScript ===-->
+	<script type="text/javascript" src="./Template/Melon/assets/js/libs/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/jquery-ui/jquery-ui-1.10.2.custom.min.js"></script>
+	
+	<script type="text/javascript" src="./Template/Melon/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/assets/js/libs/lodash.compat.min.js"></script>
+	
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="./Template/Melon/assets/js/libs/html5shiv.js"></script>
+	<![endif]-->
+
+	<script type="text/javascript" src="./Template/Melon/assets/js/demo/ui_general.js"></script>
+
+	<!-- Smartphone Touch Events -->
+	<script type="text/javascript" src="./Template/Melon/plugins/touchpunch/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/event.swipe/jquery.event.move.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/event.swipe/jquery.event.swipe.js"></script>
+
+	<!-- General -->
+	<script type="text/javascript" src="./Template/Melon/assets/js/libs/breakpoints.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/respond/respond.min.js"></script> <!-- Polyfill for min/max-width CSS3 Media Queries (only for IE8) -->
+	<script type="text/javascript" src="./Template/Melon/plugins/cookie/jquery.cookie.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/slimscroll/jquery.slimscroll.horizontal.min.js"></script>
+
+	<!-- Page specific plugins -->
+	<!-- Charts -->
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="./Template/Melon/plugins/flot/excanvas.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="./Template/Melon/plugins/sparkline/jquery.sparkline.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/flot/jquery.flot.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/flot/jquery.flot.tooltip.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/flot/jquery.flot.resize.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/flot/jquery.flot.time.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/flot/jquery.flot.growraf.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+
+	<script type="text/javascript" src="./Template/Melon/plugins/daterangepicker/moment.min.js"></script>
+	<script src="./Template/Melon/plugins/daterangepicker/bootstrap-datepicker.js"></script>
+    <script src="./Template/Melon/plugins/daterangepicker/bootstrap-datepicker-thai.js"></script>
+    <script src="./Template/Melon/plugins/daterangepicker/bootstrap-datepicker.th.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/blockui/jquery.blockUI.min.js"></script>
+
+	<script type="text/javascript" src="./Template/Melon/plugins/fullcalendar/fullcalendar.min.js"></script>
+
+	<!-- Noty -->
+	<script type="text/javascript" src="./Template/Melon/plugins/noty/jquery.noty.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/noty/layouts/top.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/noty/themes/default.js"></script>
+
+	<!-- Forms -->
+	<script type="text/javascript" src="./Template/Melon/plugins/uniform/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/typeahead/typeahead.min.js"></script> <!-- AutoComplete -->
+	<script type="text/javascript" src="./Template/Melon/plugins/autosize/jquery.autosize.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/inputlimiter/jquery.inputlimiter.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/uniform/jquery.uniform.min.js"></script> <!-- Styled radio and checkboxes -->
+	<script type="text/javascript" src="./Template/Melon/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/select2/select2.min.js"></script> <!-- Styled select boxes -->
+	<script type="text/javascript" src="./Template/Melon/plugins/fileinput/fileinput.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/duallistbox/jquery.duallistbox.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/bootstrap-inputmask/jquery.inputmask.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/bootstrap-wysihtml5/wysihtml5.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/bootstrap-multiselect/bootstrap-multiselect.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/bootstrap-switch/bootstrap-switch.min.js"></script>
+	
+	<!-- DataTables -->
+	<script type="text/javascript" src="./Template/Melon/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="./Template/Melon/plugins/datatables/tabletools/TableTools.min.js"></script> <!-- optional -->
+	<script type="text/javascript" src="./Template/Melon/plugins/datatables/colvis/ColVis.min.js"></script> <!-- optional -->
+	<script type="text/javascript" src="./Template/Melon/plugins/datatables/DT_bootstrap.js"></script>
+	
+	<omdae:TLabel id='Style3Party' />
+	<omdae:TLabel id='JavaScriptPage' />
+
+
+</head>
+
+<body>
+
+	<omdae:TPage id='header' />
+	<div id="container">
+	
+		<omdae:TPage id='menuleft' />
+
+		<omdae:TPage id='mains' />
+	</div>
+	
+
+	<!-- App -->
+	<script type="text/javascript" src="./Template/Melon/assets/js/app.js"></script>
+	<script type="text/javascript" src="./Template/Melon/assets/js/plugins.js"></script>
+	<script type="text/javascript" src="./Template/Melon/assets/js/plugins.form-components.js"></script>
+
+	<script>
+	$(document).ready(function(){
+
+		App.init(); // Init layout and core plugins
+		Plugins.init(); // Init all plugins
+		FormComponents.init(); // Init all form-specific plugins
+	});
+	</script>
+
+	<!-- Demo JS -->
+	<script type="text/javascript" src="./Template/Melon/assets/js/custom.js"></script>
+	<script type="text/javascript" src="./Template/Melon/assets/js/demo/pages_calendar.js"></script>
+	<script type="text/javascript" src="./Template/Melon/assets/js/demo/charts/chart_filled_blue.js"></script>
+	<script type="text/javascript" src="./Template/Melon/assets/js/demo/charts/chart_simple.js"></script>
+
+	<script>
+		$(".cDate").datepicker({language: 'th-th', format: 'dd-mm-yyyy', autoclose: true});
+	</script>
+</body>
+</html>

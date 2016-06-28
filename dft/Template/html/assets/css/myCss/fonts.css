@@ -1,0 +1,12 @@
+/*---------------------------------
+	@font-face
+-----------------------------------*/
+@font-face {
+	font-family: 'THSarabun';
+	src: url('THSarabunPSK.eot');
+	src: url('THSarabunPSK.eot?#iefix') format('embedded-opentype'),
+		 url('THSarabunPSK.woff') format('woff'),
+		 url('THSarabunPSK.ttf') format('truetype'),
+		 url('THSarabunPSK.svg') format('svg');
+
+}

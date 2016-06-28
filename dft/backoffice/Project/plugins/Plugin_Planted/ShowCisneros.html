@@ -1,0 +1,204 @@
+	<div id="content">
+		<div class="container">
+			<!-- Breadcrumbs line -->
+			<div class="crumbs">
+				<ul id="breadcrumbs" class="breadcrumb">
+					<li>
+						<i class="icon-home"></i>
+						<a href="?page=MainPage.HomePage">Dashboard</a>
+					</li>
+					<li>
+						<a href="?page=<omdae:TLabel id='submoduleUrl' />" title="<omdae:TLabel id='submoduleName' />"> <omdae:TLabel id='submoduleName' /></a>
+					</li>
+					<li class="current">
+						<omdae:TLabel id='plantedYear' /><omdae:THidden id='plantedID' />
+					</li>
+				</ul>
+
+				<ul class="crumb-buttons">
+					<li><a href="#" title=""><i class="icon-cog"></i><span>ตั้งค่า</span></a></li>
+				</ul>
+			</div>
+			<!-- /Breadcrumbs line -->
+
+			<omdae:ShowCisneros>
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h3>
+						<span><omdae:TLabel id='submoduleDetail' /></span>
+					</div>
+
+					<!-- Page Stats -->
+
+					<!-- /Page Stats -->
+				</div>
+				<!-- /Page Header -->
+
+				<div class="row">
+					<div class="col-md-8">
+						
+						<omdae:THidden id='sourceID' />
+						<omdae:THidden id='version_source' />
+						<omdae:THidden id='dataID' />
+						
+						<div class="input-group">
+							<omdae:TTextBox id='sourceName' />
+							<span class="input-group-btn">
+								<omdae:TButton id='bnsource' />
+							</span>
+						</div>
+
+						<br />
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-5">
+						<omdae:TInputfile id='fileexcel' /> 
+					</div>
+					<div class="col-md-5">
+						<omdae:TButton id='bnexcel' /> 
+					</div>
+				</div>
+
+				<!--=== Page Content ===-->
+				
+					<div class="row">
+						<div class="col-md-12">
+							<div class="widget box">
+								<div class="widget-header">
+									<h4><i class="icon-table"></i> เนื้อที่เพาะปลูกและผลผลิตต่อไร่ข้าว นาปี</h4>
+									
+									<!-- Toolbar -->
+									<div class="toolbar no-padding">
+										<div class="btn-group">
+											<a href="./Upload/Excel/1_2_1.xls" download class="btn btn-xs btn-primary">โหลด Excel</a>
+											
+											<omdae:TButton id='bn' />
+											<omdae:TButton id='bndelgrid' />
+											
+											<ul class="dropdown-menu pull-right">
+												<li><a href="#"><i class="icon-file-alt"></i> Word</a></li>
+												<li><a href="#"><i class="icon-file-alt"></i> Excel</a></li>
+											</ul>
+											<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+										</div>
+									</div>
+									<!-- /Toolbar -->
+
+								</div>
+								<div class="widget-content">
+									
+										<omdae:TGridview id='Grid1' />
+									
+								</div>
+								<omdae:TButton id='bnupdate' />
+							</div>
+						</div>
+					</div>
+					
+
+					<!-- Modal dialog -->
+					<div class="modal fade" id="myModal1">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+									<h4 class="modal-title">เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h4>
+								</div>
+								<div class="modal-body">
+
+								
+									<omdae:THidden id='worldID_id' />
+									<omdae:THidden id='version' />
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">จังหวัด : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='province' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ประเภทข้าว : </label>
+										<div class="col-md-9">
+											<omdae:TListBox id='typerice_box' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เนื้อที่เพาะปลูก (ไร่) : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='areaFarming_box' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เนื้อที่เก็บเกี่ยว (ไร่) : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='areaHarvest_box' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ผลผลิต (ตัน) : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='product_box' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ผลผลิต/ไร่ปลูก (กก) : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='productFarming_box' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ผลผลิต/ไร่เก็บ (กก) : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='productHarvest_box' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ร้อยละเนื้อที่เพาะปลูก : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='percent_box' />
+										</div>
+									</div>
+											
+									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									<omdae:TButton id='bnsave' />
+								</div>
+							</div><!-- /.modal-content -->
+						</div><!-- /.modal-dialog -->
+					</div><!-- /.modal -->
+
+				
+				<!-- /Page Content -->
+			</div>
+			<!-- /.container -->
+
+			
+
+			</omdae:ShowCisneros>
+		</div>
+
+<script>
+$( document ).ready(function() {
+
+	$("#myModal1").modal("hide").on("hidden.bs.modal", function () {
+
+        $(".modal-body").html("");
+	});
+});
+</script>
+
+
+<omdae:TLabel id='labelModal' />
+<omdae:TLabel id='alertmsg' />

@@ -1,0 +1,129 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=Config_Page.ShowMenuFooter" title="">จัดการเมนู footer</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข เมนู footer</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข เมนู footer</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข เมนู footer</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmMenuFooter>
+									<omdae:THidden id='menufooterID' />
+									<omdae:THidden id='version' />
+		
+									<div class="form-group">
+										<label class="col-md-2 control-label">ประเภทเมนูบาร์  : </label>
+										<div class="col-md-4">
+											<omdae:TListBox id='menufooterType' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-2 control-label">ใส่ลิงค์  : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='menufooterLink' />
+											<span class="help-block">หากไม่ได้ลิงค์ออกภายนอก กรุณาใส่ # ไว้นะครับ</span>
+										</div>
+									</div>
+
+									<div class="tabbable tabbable-custom tabs-left">
+											<!-- Only required for left/right tabs -->
+											<ul class="nav nav-tabs tabs-left">
+												<li class="active"><a href="#tab_3_1" data-toggle="tab">สำหรับภาษาไทย</a></li>
+												<li class=""><a href="#tab_3_2" data-toggle="tab">สำหรับภาษาอังกฤษ</a></li>
+											</ul>
+											<div class="tab-content">
+												<div class="tab-pane active" id="tab_3_1" style="min-height: 118px;">
+
+													<div class="form-group">
+														<label class="col-md-2 control-label">ชื่อเมนู (TH)  : </label>
+														<div class="col-md-10">
+															<omdae:TTextBox id='menufooterName' />
+														</div>
+													</div>
+
+													<div class="form-group">
+															<label class="col-md-2 control-label">รายละเอียด (TH)  : </label>
+														<div class="col-md-10">
+															<omdae:TSummereditor id='menufooterDetail' />
+														</div>
+													</div>
+
+												</div>
+
+												<div class="tab-pane" id="tab_3_2" style="min-height: 118px;">
+													
+													<div class="form-group">
+														<label class="col-md-2 control-label">ชื่อเมนู (EN)  : </label>
+														<div class="col-md-10">
+															<omdae:TTextBox id='menufooterNameEn' />
+														</div>
+													</div>
+
+													<div class="form-group">
+															<label class="col-md-2 control-label">รายละเอียด (EN)  : </label>
+														<div class="col-md-10">
+															<omdae:TSummereditor id='menufooterDetailEn' />
+														</div>
+													</div>
+
+												</div>
+											</div>
+										</div>
+
+									
+									<div class="form-group">
+										<label class="col-md-2 control-label">ลำดับการแสดงผล  : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='menufooterNumber' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-2 control-label">เปิด/ปิดการใช้งาน</small></label>
+										<div class="col-md-4"><omdae:TListBox id='status' /></div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmMenuFooter>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+			</div>
+			<!-- /Page Content -->
+		</div>
+		<!-- /.container -->

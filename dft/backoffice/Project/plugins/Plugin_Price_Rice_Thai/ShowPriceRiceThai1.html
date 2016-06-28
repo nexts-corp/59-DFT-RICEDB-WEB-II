@@ -1,0 +1,101 @@
+<div class="container">
+	<!-- Breadcrumbs line -->
+	<div class="crumbs">
+		<ul id="breadcrumbs" class="breadcrumb">
+			<li>
+				<i class="icon-home"></i>
+				<a href="?page=MainPage.HomePage">Dashboard</a>
+			</li>
+			<li class="current">
+				<a href="?page=<omdae:TLabel id='submoduleUrl' />" title="<omdae:TLabel id='submoduleName' />"> <omdae:TLabel id='submoduleName' /></a>
+			</li>
+		</ul>
+
+		<ul class="crumb-buttons">
+			<li><a href="#" title=""><i class="icon-cog"></i><span>ตั้งค่า</span></a></li>
+		</ul>
+	</div>
+	<!-- /Breadcrumbs line -->
+	
+	
+
+
+	<omdae:ShowPriceRiceThai1>
+		<!--=== Page Header ===-->
+		<div class="page-header">
+			<div class="page-title">
+				<h3><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h3>
+				<span><omdae:TLabel id='submoduleDetail' /></span>
+			</div>
+
+			<!-- Page Stats -->
+			
+
+			<!-- /Page Stats -->
+		</div>
+		<!-- /Page Header -->
+		
+		<div class="row">
+			<div class="col-md-4">
+				
+				<div class="widget box">
+					<div class="widget-header">
+						<h4><i class="icon-reorder"></i>อับโหลด Excel</h4>
+					</div>
+					<div class="widget-content align-center">
+						<div class="input-group">
+							<omdae:TInputfile id='fileexcel' /> 
+							<span class="input-group-btn">
+								<omdae:TButton id='bnexcel' /> 
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--=== Page Content ===-->
+		
+			<div class="row">
+				<div class="col-md-12">
+
+				
+					<div class="widget box">
+						<div class="widget-header">
+							<h4><i class="icon-table"></i> ราคาข้าวเปลือกภูมิภาค</h4>
+							
+					
+							<div class="toolbar no-padding">
+								<div class="btn-group">
+									
+								<omdae:TButton id='bn' />
+								<omdae:TButton id='bnupdate' />
+								<omdae:TButton id='bndelgrid' />
+							
+								<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+								</div>
+							</div>
+						
+
+						</div>
+						<div class="widget-content">
+							
+							<omdae:TGridview id='Grid1' />
+		
+							
+						</div>
+					</div>
+					
+
+					
+
+				</div>
+			</div>
+			
+		
+		<!-- /Page Content -->
+	</div>
+	<!-- /.container -->
+
+	</omdae:ShowPriceRiceThai1>
+<omdae:TLabel id='alertmsg' />

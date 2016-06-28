@@ -1,0 +1,77 @@
+	<div id="content">
+		<div class="container">
+			<!-- Breadcrumbs line -->
+			<div class="crumbs">
+				<ul id="breadcrumbs" class="breadcrumb">
+					<li>
+						<i class="icon-home"></i>
+						<a href="?page=MainPage.HomePage">Dashboard</a>
+					</li>
+					<li class="current">
+						<a href="?page=<omdae:TLabel id='submoduleUrl' />" title="<omdae:TLabel id='submoduleName' />"> <omdae:TLabel id='submoduleName' /></a>
+					</li>
+				</ul>
+
+				<ul class="crumb-buttons">
+					<li><a href="#" title=""><i class="icon-cog"></i><span>ตั้งค่า</span></a></li>
+				</ul>
+			</div>
+			<!-- /Breadcrumbs line -->
+
+			<omdae:ShowNewType>
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h3>
+						<span><omdae:TLabel id='submoduleDetail' /></span>
+					</div>
+
+					<!-- Page Stats -->
+
+					<!-- /Page Stats -->
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				
+					<div class="row">
+						<div class="col-md-12">
+							<div class="widget box">
+								<div class="widget-header">
+									<h4><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h4>
+									
+									<!-- Toolbar -->
+									<div class="toolbar no-padding">
+										<div class="btn-group">
+											
+											<omdae:TButton id='bn' />
+											<omdae:TButton id='bndelgrid' />
+											
+											<ul class="dropdown-menu pull-right">
+												<li><a href="#"><i class="icon-file-alt"></i> Word</a></li>
+												<li><a href="#"><i class="icon-file-alt"></i> Excel</a></li>
+											</ul>
+											<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+										</div>
+									</div>
+									<!-- /Toolbar -->
+
+								</div>
+								<div class="widget-content">
+									
+										<omdae:TGridtable id='Grid1' />
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				
+				<!-- /Page Content -->
+			</div>
+			<!-- /.container -->
+			</omdae:ShowNewType>
+		</div>
+
+
+<omdae:TLabel id='alertmsg' />

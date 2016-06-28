@@ -1,0 +1,120 @@
+
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข จัดการติดต่อเรา</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข จัดการติดต่อเรา</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข จัดการติดต่อเรา</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmContactUs>
+									<omdae:THidden id='contactusID' />
+									<omdae:THidden id='version' />
+									
+
+									
+
+								
+
+									<div class="form-group">
+										<label class="control-label col-md-2">ชื่อบริษัท Th : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='companyTh' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-2">ชื่อบริษัท En : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='companyEn' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-2">ที่อยู่ Th : </label>
+										<div class="col-md-10">
+											<omdae:TTextarea id='addressTh' />
+										</div>
+									</div>
+
+										<div class="form-group">
+										<label class="control-label col-md-2">ที่อยู่ En : </label>
+										<div class="col-md-10">
+											<omdae:TTextarea id='addressEn' />
+										</div>
+									</div>
+
+
+
+									<div class="form-group">
+										<label class="control-label col-md-2">อีเมล์ที่ติดต่อ : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='email' />
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-2">เบอร์ติดต่อ : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='phone' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-2">Fax : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='fax' />
+										</div>
+									</div>
+
+									
+
+									<div class="form-group">
+										<label class="control-label col-md-2">สถานะ : </label>
+										<div class="col-md-10">
+											<omdae:TListBox id='status' />
+										</div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmContactUs>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+			</div>
+			<!-- /Page Content -->
+		</div>
+		<!-- /.container -->
+		<omdae:TLabel id='alertmsg' />

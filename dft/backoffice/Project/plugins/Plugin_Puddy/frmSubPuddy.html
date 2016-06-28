@@ -1,0 +1,168 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=<omdae:TLabel id='submoduleUrl' />" title="<omdae:TLabel id='submoduleName' />"><omdae:TLabel id='submoduleName' /></a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3><i class="icon-list-ul"></i> เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-list-ul"></i> เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmSubPuddy>
+									<omdae:THidden id='subPuddyID' />
+									<omdae:THidden id='version' />
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เลือกรูปบบการเพิ่ม : </label>
+										<div class="col-md-4"><omdae:TListBox id='listType' /></div>
+									</div>
+
+									<div id="normal" >
+									
+									<div class="form-group">
+										<label class="col-md-3 control-label">เลือกจังหวัด : </label>
+										<div class="col-md-4"><omdae:TListBox id='province' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เลือกวัน/สัปดาห์ : </label>
+										<div class="col-md-4"><omdae:TListBox id='dayAndWeek' /></div>
+									</div>
+
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">รายละเอียด : </label>
+										<div class="col-md-4"><omdae:TTextBox id='details' /></div>
+									</div>
+
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">เปิด/ปิดการใช้งาน</small></label>
+										<div class="col-md-4"><omdae:TListBox id='status' /></div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+									</div>
+
+									<div id="excel" style="display:none;">
+									
+									<div class="form-group">
+										<label class="col-md-3 control-label">ดาวน์โหลดตัวอย่าง Excel </label>
+										<div class="col-md-4"> <a href="images/puddy.xls" target="_blank" class="btn btn-info btn-block" >ตัวอย่างไฟล์ Excel  </a></div>
+									</div>
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">เพิ่มข้อมูลด้วย Excel : </label>
+										<div class="col-md-4"><omdae:TInputfile id='exelFile' /></div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bnexcel' />
+										
+									</div>
+
+									</div>
+
+
+									<div id="bot" style="display:none;">
+									
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">ลิ้งเริ่มต้น : </label>
+										<div class="col-md-6"><omdae:TTextBox id='startLink' /></div>
+									</div>
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">ลิ้งสิ้นสุด : </label>
+										<div class="col-md-6"><omdae:TTextBox id='endLink' /></div>
+									</div>
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">ดึงข้อมูล</label>
+										<div class="col-md-6"> <a  class="btn btn-warning btn-block" > คลิกดึงข้อมูล</a></div>
+									</div>
+
+									</div>
+
+								
+
+								</omdae:frmSubPuddy>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+
+
+
+		</div>
+		<!-- /Page Content -->
+	</div>
+	<!-- /.container -->
+<script  type="text/javascript" >
+	$("#listType").change(function() {	
+
+		var listType = $("#listType").val();
+
+		if(listType=="normal"){
+
+			$("#normal").show(500);
+			$("#bot").hide(500);
+			$("#excel").hide(500);
+
+		}else if(listType=="excel") {
+
+			$("#normal").hide(500);
+			$("#bot").hide(500);
+			$("#excel").show(500);
+
+		}else{
+			$("#excel").hide(500);
+		}
+
+		if(listType=="bot"){
+
+			
+			$("#normal").hide(500);
+			$("#bot").show(500);
+			$("#excel").hide(500);
+
+		}else{
+			$("#bot").hide(500);
+		}
+
+
+	});
+
+	</script>

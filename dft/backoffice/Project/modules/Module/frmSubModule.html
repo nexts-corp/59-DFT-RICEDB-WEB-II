@@ -1,0 +1,117 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=Module.ShowModule" title="Modules">Modules</a>
+						</li>
+						<li>
+							<a href="?page=Module.ShowSubModule&moduleID=<omdae:TLabel id='moduleIDView' />" title="">จัดการโมดูลย่อย</a>
+						</li>
+						<li class="current">
+							<a href="pages_calendar.html" title="">เพิ่ม แก้ไข โมดูลย่อย</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข โมดูลย่อย</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข โมดูลย่อย</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmSubModule>
+									<omdae:THidden id='moduleID' />
+									<omdae:THidden id='version' />
+									<omdae:THidden id='submoduleID_' />
+
+									<div class="form-group">
+										<label class="control-label col-md-3">ชื่อโมดูลย่อยระบบ (System) : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='submoduleSystem' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-3">ชื่อโมดูลย่อย : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='submoduleName' />
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-3">ลำดับการแสดงผล : </label>
+										<div class="col-md-9">
+											<omdae:TTextBox id='submoduleNumber' />
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">สัญลักษณ์พิเศษ : </label>
+										  <div class="col-md-9">
+												<omdae:TTextBox id='submoduleEmo' />
+										 </div>
+									</div>  
+									
+									<div class="form-group">
+										<label class="control-label col-md-3">Url โมดูลย่อย : </label>
+										  <div class="col-md-9">
+												<omdae:TTextBox id='submoduleUrl' />
+										 </div>
+									</div>  
+
+									<div class="form-group">
+										<label class="control-label col-md-3">รายละเอียดโมดูลย่อย : </label>
+										  <div class="col-md-9">
+												<omdae:TTextarea id='submoduleDetail' />
+										 </div>
+									</div>  
+						
+									<div class="form-group">
+									  <label class="control-label col-md-3">เปิด/ปิดการใช้งาน : </label>
+									  <div class="col-md-4">
+											<omdae:TListBox id='status' />
+									  </div>
+									</div>
+
+									
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmSubModule>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+
+
+
+				</div>
+				<!-- /Page Content -->
+			</div>
+			<!-- /.container -->
+
+	</div>
+

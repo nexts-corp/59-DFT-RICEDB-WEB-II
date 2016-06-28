@@ -1,0 +1,92 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข จัดการเว็บไซต์</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข จัดการเว็บไซต์</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข จัดการเว็บไซต์</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmConfigPage>
+									<omdae:THidden id='pageID' />
+									<omdae:THidden id='version' />
+									
+									<div class="form-group">
+										<label class="control-label col-md-2">Web Title : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='pageWebTitle' />
+											<span class="help-block">ตัวอย่าง 1 : แฟชั่นเสื้อผ้า เสื้อผ้า เสื้อผ้าแฟชั่น เสื้อผ้าเกาหลี น้ำหอม แฟชั่น</span>
+										</div>
+									</div>
+									
+
+									<div class="form-group">
+										<label class="control-label col-md-2">Keyword : </label>
+										<div class="col-md-10">
+											<omdae:TTextBox id='pageKeyword' />
+											<span class="help-block">ตัวอย่าง 1 : เสื้อผ้าแฟชั่น, ช้อปปิ้ง, แฟชั่น, สินค้ามือสอง, เสื้อผ้า, เครื่องสำอางค์</span>
+										</div>
+									</div>
+									
+
+									<div class="form-group">
+										<label class="control-label col-md-2">Description : </label>
+										<div class="col-md-10">
+											<omdae:TTextarea id='pageDescription' />
+											<span class="help-block">คำอธิบายสั้นๆ ที่พูดถึงเว็บสินค้าในร้านของท่าน โดย Google จะนำข้อความนี้ไปแสดงผลในการค้นหา</span>
+										</div>
+									</div>
+
+									
+
+									<div class="form-group">
+										<label class="control-label col-md-2">Google Analytic : </label>
+										<div class="col-md-10">
+											<omdae:TTextarea id='pageGoogleAnalytic' />
+											<span class="help-block">ขั้นตอน การนำโค้ดมาใส่ : ให้สมัครใช้งานกับ google analytic ที่เว็บนี้ http://www.google.com/analytics/ พอสมัครเสร็จแล้วจะได้โค้ดแบบนี้ </span>
+										</div>
+									</div>
+
+									
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmConfigPage>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+			</div>
+			<!-- /Page Content -->
+		</div>
+		<!-- /.container -->
+		<omdae:TLabel id='alertmsg' />

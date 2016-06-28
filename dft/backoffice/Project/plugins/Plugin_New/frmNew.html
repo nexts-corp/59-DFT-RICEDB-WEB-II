@@ -1,0 +1,103 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=<omdae:TLabel id='submoduleUrl' />" title=""><omdae:TLabel id='submoduleName' /></a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3><i class="icon-list-ul"></i> เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-list-ul"></i> เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmNew>
+									<omdae:THidden id='newID' />
+									<omdae:THidden id='version' />
+									
+									<div class="form-group">
+										<label class="col-md-3 control-label">ประเภทข่าวสาร : </label>
+										<div class="col-md-4"><omdae:TListBox id='newtypeID' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">หัวข้อข่าวสาร : </label>
+										<div class="col-md-9"><omdae:TTextBox id='newName' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">หัวข้อข่าวสาร (En): </label>
+										<div class="col-md-9"><omdae:TTextBox id='newNameEn' /></div>
+									</div>
+
+
+							
+									<div class="form-group">
+										<label class="col-md-3 control-label">รายละเอียดข่าวสาร : </label>
+										<div class="col-md-9"><omdae:TTextckeditor id='newDetail' /></div>
+									</div>
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">รายละเอียดข่าวสาร (En) : </label>
+										<div class="col-md-9"><omdae:TTextckeditor id='newDetailEn' /></div>
+									</div>
+
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">รูปแนบ : </label>
+										<div class="col-md-4"><omdae:TInputfile id='newImg' /></div>
+									</div>
+
+
+										<div class="form-group">
+										<label class="col-md-3 control-label">ไฟล์แนบ pdf : </label>
+										<div class="col-md-4"><omdae:TInputfile id='newFile' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เปิด/ปิดการใช้งาน</small></label>
+										<div class="col-md-4"><omdae:TListBox id='status' /></div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmNew>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+
+
+
+		</div>
+		<!-- /Page Content -->
+	</div>
+	<!-- /.container -->

@@ -1,0 +1,120 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=Register.ShowRegister" title="">จัดการผู้ใช้งาน</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข จัดการผู้ใช้งาน</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข จัดการผู้ใช้งาน</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข จัดการผู้ใช้งาน</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmRegister>
+									<omdae:THidden id='registerID' />
+									<omdae:THidden id='version' />
+									
+									<div class="form-group">
+										  <label class="col-md-3 control-label">ชื่อที่ใช้งานระบบ : </label>
+										  <div class="col-md-9">
+												<omdae:TTextBox id='userName' />
+										  </div>
+										</div>
+
+										<div class="form-group">
+										  <label class="col-md-3 control-label">รหัสผ่าน : </label>
+										  <div class="col-md-9">
+												<omdae:TPassword id='userPassword' />
+										  </div>
+										</div>
+
+										<div class="form-group">
+										  <label class="col-md-3 control-label">ชื่อ-นามสกุลผู้ใช้งาน : </label>
+										  <div class="col-md-9">
+												<omdae:TTextBox id='registerName' />
+										  </div>
+										</div>
+										
+										<div class="form-group">
+										  <label class="col-md-3 control-label">เบอร์ติดต่อ : </label>
+										  <div class="col-md-9">
+												<omdae:TTextBox id='registerPhone' />
+										  </div>
+										</div>
+										
+										<div class="form-group">
+										  <label class="col-md-3 control-label">อีเมล์ผู้ใช้งาน : </label>
+										  <div class="col-md-9">
+												<omdae:TTextBox id='registerEmail' />
+										  </div>
+										</div>
+										
+										<div class="form-group">
+										  <label class="col-md-3 control-label">ที่อยู่ : </label>
+										  <div class="col-md-9">
+												<omdae:TTextarea id='registerAddress' />
+										  </div>
+										</div>
+										
+
+										<div class="form-group">
+										  <label class="col-md-3 control-label">ประเภทผู้ใช้งาน : </label>
+										  <div class="col-md-4">
+												<omdae:TListBox id='usertypeID' />
+										  </div>
+										</div>
+
+										<div class="form-group">
+										  <label class="col-md-3 control-label">สามารถเข้าถึง ระดับชั้นความลับ : </label>
+										  <div class="col-md-9">
+												<omdae:TRadio id='levelSecrete' />
+										  </div>
+										</div>
+
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เปิด/ปิดการใช้งาน</small></label>
+										<div class="col-md-4"><omdae:TListBox id='status' /></div>
+									</div>
+
+									
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmRegister>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+			</div>
+			<!-- /Page Content -->
+		</div>
+		<!-- /.container -->

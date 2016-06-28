@@ -1,0 +1,370 @@
+<div id="content">
+	<div class="container">
+		<!-- Breadcrumbs line -->
+		<div class="crumbs">
+			<ul id="breadcrumbs" class="breadcrumb">
+				<li>
+					<i class="icon-home"></i>
+					<a href="?page=MainPage.HomePage">Dashboard</a>
+				</li>
+				<li class="current">
+					<a href="?page=<omdae:TLabel id='submoduleUrl' />" title="<omdae:TLabel id='submoduleName' />"> <omdae:TLabel id='submoduleName' /></a>
+				</li>
+			</ul>
+
+			<ul class="crumb-buttons">
+				<li><a href="#" title=""><i class="icon-cog"></i><span>ตั้งค่า</span></a></li>
+			</ul>
+		</div>
+		<!-- /Breadcrumbs line -->
+
+		<omdae:ShowPriceRiceThai>
+			<!--=== Page Header ===-->
+			<div class="page-header">
+				<div class="page-title">
+					<h3><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h3>
+					<span><omdae:TLabel id='submoduleDetail' /></span>
+				</div>
+
+				<!-- Page Stats -->
+
+				<!-- /Page Stats -->
+			</div>
+			<!-- /Page Header -->
+
+			<!--=== Page Content ===-->
+			
+				<div class="row">
+					<div class="col-md-12">
+
+					
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-table"></i> <omdae:TLabel id='submoduleName' /></h4>
+								
+						
+								<div class="toolbar no-padding">
+									<div class="btn-group">
+										
+										
+								
+									<span class="btn btn-xs widget-collapse"><i class="icon-angle-down"></i></span>
+									</div>
+								</div>
+							
+
+							</div>
+							<div class="widget-content">
+								
+								<!--<omdae:TGridtable id='Grid1' />-->
+								<!-- Tabs-->
+								<div class="tabbable tabbable-custom">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab_1_1" data-toggle="tab">ราคาข้าวเปลือก</a></li>
+										<li><a href="#tab_1_2" data-toggle="tab">ราคาข้าวสาร</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="tab_1_1">
+									
+											<div class="panel-group" id="accordion">
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn1' />
+													
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_2_1">
+														ราคาข้าวเปลือกภูมิภาค (กรมการค้าภายใน)
+														</a>
+														</h3>
+													</div>
+
+													<div id="3_2_1" class="panel-collapse collapse in">
+
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid1' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn2' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_2_2">
+														ราคาข้าวเปลือกเฉลี่ย (สมาคมโรงสีข้าวไทย)
+														</a>
+														</h3>
+													</div>
+													<div id="3_2_2" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid2' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn3' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_2_3">
+														ราคาที่เกษตรกรขายได้ที่ไร่-นาเฉลี่ยทั้งประเทศ (สำนักงานเศรษฐกิจการเกษตร)
+														</a>
+														</h3>
+													</div>
+													<div id="3_2_3" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid3' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn4' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_2_4">
+														ราคารับซื้อรายวันที่ตลาดกลางและตลาดสำคัญ (สำนักงานเศรษฐกิจการเกษตร)
+														</a>
+														</h3>
+													</div>
+													<div id="3_2_4" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid4' />
+														</div>
+													</div>
+												</div>
+												
+												
+											</div>
+										
+										</div>
+										<div class="tab-pane" id="tab_1_2">
+											<div class="panel-group" id="accordion">
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn5' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_3_1">
+														ราคาขายปลีกตลาดกรุงเทพฯ (กรมการค้าภายใน)
+														</a>
+														</h3>
+													</div>
+													<div id="3_3_1" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid5' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn6' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_3_2">
+														ราคาขายส่งตลาดกรุงเทพฯ (กรมการค้าภายใน)
+														</a>
+														</h3>
+													</div>
+													<div id="3_3_2" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid6' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn7' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_3_2">
+														ราคาข้าวสารของสมาคมโรงสีข้าวไทย (สมาคมโรงสีข้าวไทย)
+														</a>
+														</h3>
+													</div>
+													<div id="3_3_2" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid7' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn8' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_3_2">
+														ราคาข้าวตลาดกรุงเทพฯ (สมาคมค้าข้าวไทย)
+														</a>
+														</h3>
+													</div>
+													<div id="3_3_2" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid8' />
+														</div>
+													</div>
+												</div>
+
+												<div class="panel panel-default">
+													<omdae:TButton id='bn9' />
+													<div class="panel-heading">
+														<h3 class="panel-title">
+														<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#3_3_2">
+														ราคาข้าวถุง (สมาคมผู้ประกอบการข้าวถุงไทย)
+														</a>
+														</h3>
+													</div>
+													<div id="3_3_2" class="panel-collapse collapse in">
+														<div class="panel-body">
+															<omdae:TGridtable id='Grid9' />
+														</div>
+													</div>
+												</div>
+
+											</div>
+
+										</div>
+										
+									</div>
+								</div>
+								<!--END TABS-->
+								
+							</div>
+						</div>
+						
+
+						
+
+					</div>
+				</div>
+				
+			
+			<!-- /Page Content -->
+		</div>
+		<!-- /.container -->
+
+		<!-- Modal dialog -->
+		<div class="modal fade" id="myModal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h4>
+					</div>
+					<div class="modal-body">
+						
+						<omdae:THidden id='thaiID_id' />
+						<omdae:THidden id='version' />
+
+						<div class="form-group">
+							<label class="col-md-3 control-label">ข้อมูล ณ วันที่ : </label>
+							<div class="col-md-9"><omdae:TTextBox id='thaiDate' /></div>
+						</div>
+
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<omdae:TButton id='bnsave1' />
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<!-- Modal dialog -->
+		<div class="modal fade" id="myModal2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h4>
+					</div>
+					<div class="modal-body">
+						
+						<omdae:THidden id='thaiID_id' />
+						<omdae:THidden id='version' />
+
+						<div class="form-group">
+							<label class="col-md-3 control-label">ข้อมูล ณ วันที่ : </label>
+							<div class="col-md-9"><omdae:TTextBox id='thaiDate' /></div>
+						</div>
+
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<omdae:TButton id='bnsave2' />
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		</omdae:ShowPriceRiceThai>
+	</div>
+
+	<!-- Modal dialog -->
+		<div class="modal fade" id="myModal3">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title">เพิ่ม แก้ไข <omdae:TLabel id='submoduleName' /></h4>
+					</div>
+					<div class="modal-body">
+						
+						<omdae:THidden id='thaiID_id' />
+						<omdae:THidden id='version' />
+
+						<div class="form-group">
+							<label class="col-md-3 control-label">ข้อมูล ณ วันที่ : </label>
+							<div class="col-md-9"><omdae:TTextBox id='thaiDate' /></div>
+						</div>
+
+
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<omdae:TButton id='bnsave3' />
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		</omdae:ShowPriceRiceThai>
+	</div>
+
+<script>
+$( document ).ready(function() {
+
+	$("#myModal1").modal("hide").on("hidden.bs.modal", function () {
+
+        $(".modal-body").html("");
+	});
+});
+</script>
+
+<script>
+$( document ).ready(function() {
+
+	$("#myModal2").modal("hide").on("hidden.bs.modal", function () {
+
+        $(".modal-body").html("");
+	});
+});
+</script>
+
+<script>
+$( document ).ready(function() {
+
+	$("#myModal3").modal("hide").on("hidden.bs.modal", function () {
+
+        $(".modal-body").html("");
+	});
+});
+</script>
+
+
+
+<omdae:TLabel id='labelModal' />
+<omdae:TLabel id='alertmsg' />

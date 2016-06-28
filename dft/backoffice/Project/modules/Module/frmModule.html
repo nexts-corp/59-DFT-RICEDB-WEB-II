@@ -1,0 +1,93 @@
+		<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=Module.ShowModule" title="">Modules</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข Modules</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข Modules</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข Modules</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmModule>
+									<omdae:THidden id='moduleID' />
+									<omdae:THidden id='version' />
+									<div class="form-group">
+										<label class="col-md-3 control-label">ชื่อโมดูลระบบ (system) : </label>
+										<div class="col-md-9"><omdae:TTextBox id='moduleSystem' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ชื่อโมดูล : </label>
+										<div class="col-md-9"><omdae:TTextBox id='moduleName' /></div>
+									</div>
+									
+									<div class="form-group">
+										<label class="col-md-3 control-label">ลำดับการแสดง : </label>
+										<div class="col-md-9"><omdae:TTextBox id='moduleSequence' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">รายละเอียดโมดูล : </label>
+										<div class="col-md-9"><omdae:TTextarea id='moduleDetail' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">การเข้าถึงข้อมูล : </small></label>
+										<div class="col-md-9"><omdae:TCheckBox id='usertypeID' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">ตำแหน่งการแสดง : </small></label>
+										<div class="col-md-9"><omdae:TCheckBox id='modulePosition' /></div>
+									</div>
+
+									<div class="form-group">
+										<label class="col-md-3 control-label">เปิด/ปิดการใช้งาน</small></label>
+										<div class="col-md-4"><omdae:TListBox id='status' /></div>
+									</div>
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmModule>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+
+
+
+		</div>
+		<!-- /Page Content -->
+	</div>
+	<!-- /.container -->

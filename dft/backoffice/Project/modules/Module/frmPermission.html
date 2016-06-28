@@ -1,0 +1,67 @@
+	<div id="content">
+			<div class="container">
+				<!-- Breadcrumbs line -->
+				<div class="crumbs">
+					<ul id="breadcrumbs" class="breadcrumb">
+						<li>
+							<i class="icon-home"></i>
+							<a href="?page=MainPage.HomePage">Dashboard</a>
+						</li>
+						<li>
+							<a href="?page=Module.ShowModule" title="Modules">Modules</a>
+						</li>
+						<li>
+							<a href="?page=Module.ShowSubModule&moduleID=<omdae:TLabel id='moduleIDView' />" title="">จัดการโมดูลย่อย</a>
+						</li>
+						<li class="current">
+							<a href="#" title="">เพิ่ม แก้ไข สิทธิ์การเข้าถึงข้อมูล</a>
+						</li>
+					</ul>
+				</div>
+				<!-- /Breadcrumbs line -->
+
+				<!--=== Page Header ===-->
+				<div class="page-header">
+					<div class="page-title">
+						<h3>เพิ่ม แก้ไข สิทธิ์การเข้าถึงข้อมูล</h3>
+					</div>
+				</div>
+				<!-- /Page Header -->
+
+				<!--=== Page Content ===-->
+				<div class="row">
+					<!--=== Horizontal Forms ===-->
+					<div class="col-md-12">
+						<div class="widget box">
+							<div class="widget-header">
+								<h4><i class="icon-reorder"></i> เพิ่ม แก้ไข สิทธิ์การเข้าถึงข้อมูล</h4>
+							</div>
+							<div class="widget-content">
+								<omdae:frmPermission>
+									<omdae:THidden id='moduleIDView' />
+									<omdae:THidden id='submoduleIDView' />
+									
+									<omdae:TPanel id='pn' />
+									
+
+									<div class="form-actions">
+										<omdae:TButton id='bn' />
+										<omdae:TResets id='bnreset' />
+									</div>
+
+								</omdae:frmPermission>
+							</div>
+						</div>
+					</div>
+					<!-- /Horizontal Forms -->
+				</div>
+
+
+
+
+				</div>
+				<!-- /Page Content -->
+			</div>
+			<!-- /.container -->
+
+	</div>
